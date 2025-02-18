@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="icon" type="image/png" href="https://www.jscellunlock.com.br/ms-icon-150x150.png">
+  <link rel="shortcut icon" href="https://www.jscellunlock.com.br/ms-icon-150x150.png" type="image/png">
+  <meta name="description" content="Bem-vindo">
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="jscellunlock" />
+  <meta property="og:title" content="Login" />
+  <meta property="og:description" content="Bem-vindo" />
+  <meta property="og:image" content="https://www.jscellunlock.com.br/ms-icon-150x150.png" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      /* Fallback para navegadores que não suportam gradiente */
+      background-image: linear-gradient(45deg, #111111, #258af5, #b4b2b2, #000000, #258af5, #000000, #b4b2b2, #258af5, #000000, #b4b2b2);
+      background-size: 200% 200%;
+      animation: gradientAnimation 10s ease infinite;
+      height: calc(100% + 3px);
+      /* A animação abaixo pode ser ajustada ou removida se não for necessária */
+      animation: glowing-button-85 20s linear infinite;
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 50% 0%;
+      }
+
+      100% {
+        background-position: 100% 0%;
+      }
+    }
+
+    /* Estilo para os marquee ocuparem toda a largura da tela */
+    .marquee {
+      width: 100%;
+      display: block;
+      font-size: 24px;
+      color: rgb(255, 251, 251);
+      padding: 0.8px;
+      border-radius: 0.8px;
+    }
+
+    .container {
+      max-width: 440px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 15px;
+      padding: 10px;
+      box-shadow: 0 2px 10px rgba(255, 140, 90, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 8px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #000;
+    }
+
+    .toggle {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .toggle a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .nav-principal ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+
+    .nav-principal ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .nav-principal a {
+      color: #fff;
+    }
+
+    .nav-principal,
+    .menu-mobile {
+      background-color: #000000 !important;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      width: 100vw;
+    }
+
+    /* Rodapé fixo no canto inferior */
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #383838;
+      color: #fff;
+      padding: 02px 09px;
+    }
+
+    /* Layout do rodapé: três colunas para os dados */
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    .footer-item {
+      flex: 1;
+      margin: 0 5px;
+      font-size: 13px;
+    }
+
+    .footer-left {
+      text-align: left;
+    }
+
+    .footer-middle {
+      text-align: center;
+    }
+
+    .footer-right {
+      text-align: right;
+    }
+
+    /* Copyright centralizado abaixo */
+    .footer-bottom {
+      text-align: center;
+      margin-top: 5px;
+      font-size: 05px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Marquee superior -->
+  <marquee class="marquee" behavior="scroll" direction="left" scrollamount="5"
+    style="background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(0, 0, 255, 1) 100%);">
+    <span class="marquee-content">
+      LICENÇA DE 3 MESES, 6 MESES, 12 MESES | CHEETAH TOOL | GRIFFIN-UNLOCK TOOL | CHIMERA TOOL |
+      UNLOCK TOOL | MDM FIX TOOL | BORNEO LICENÇA | MOTO KING |
+      GSM TOOL | TSM TOOL | PANDORA | Global Unlocker Pro | OCTOPLUS | TFM Tool Pro | DFT PRO | CF TOOL |
+      BOX & DONGLE ATIVAÇAO | DESBLOQUEIO | IPHONE | REALME | SAMSUNG | XIAOMI | LG | LENOVO | NOKIA
+    </span>
+  </marquee>
+
+  <!-- Linha em branco -->
+  <div style="height:5px; background-color:#fff;"></div>
+
+  <!-- Marquee inferior -->
+  <marquee class="marquee" behavior="scroll" direction="right" scrollamount="5"
+    style="background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 38, 255) 100%);">
+    <span class="marquee-content">
+      AGRADECEMOS POR UTILIZAR NOSSO SERVIÇOS RESPOSTA RAPIDA - CLIQUE AQUI DE UMAS OPÇOES A BAIXOR:
+      +55 81973202326 @ ADMINISTRADOR DA WEB
+    </span>
+  </marquee>
+
+  <!-- Linha em branco -->
+  <div style="height:5px; background-color:#fff;"></div>
+
+  <div class="login-container">
+    <!-- Barra de navegação -->
+    <div class="nav-principal menu-1">
+      <ul class="nav d-flex justify-content-center align-items-center menu-principal categorias">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="inscriçao.html">CADASTRO</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h2>Login</h2>
+      <form id="formLogin">
+        <div class="form-group">
+          <input type="email" id="emailLogin" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <input type="password" id="senhaLogin" placeholder="Senha" required>
+        </div>
+        <button type="submit">Entrar</button>
+      </form>
+      <div class="toggle">
+        <p>Não tem uma conta? <a href="inscriçao.html">Cadastre-se aqui</a></p>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .credit-card-icons ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .credit-card-icons ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .credit-card-icons img {
+      width: 20px;
+      height: auto;
+    }
+
+   
+
+    .credit-card-icons {
+      position: absolute;
+      right: 01px;
+      top: 63%;
+      transform: translateY(-40%);
+    }
+  </style>
+
+  <!-- Rodapé fixo -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-item footer-left ">
+        <p class="h6">jscellunlock.com.br</p>
+      </div>
+      <div class="footer-item ">
+        <p class="h6">telefone: (81) 973202326</p>
+      </div>
+      <div class="footer-item ">
+        <p class=" h6"> Gmail: jshrq12@gmail.com</p>
+      </div>
+
+      <!-- Ícones dos cartões de crédito -->
+      <div class="credit-card-icons mt-2">
+        
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <img src="imagem/visa.png" alt="Visa" style="width:50px;">
+          </li>
+          <li class="list-inline-item">
+            <img src="imagem/Mastercard.png" alt="MasterCard" style="width:50px;">
+          </li>
+          <li class="list-inline-item">
+            <img src="imagem/elo.png" alt="MasterCard" style="width:50px;">
+          </li>
+          <!-- Adicione mais ícones conforme necessário -->
+        </ul>
+
+      </div>
+    </div>
+    <br>
+    © 2025 Todos os direitos reservados
+  </footer>
+
+  <script>
+    document.getElementById('formLogin').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email = document.getElementById('emailLogin').value;
+      const senha = document.getElementById('senhaLogin').value;
+      let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+      const usuario = usuarios.find(u => u.email === email && u.senha === senha);
+      if (usuario) {
+        alert('Login realizado com sucesso!');
+        // Armazena o usuário logado para controle de acesso em outras páginas
+        localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
+        window.location.href = 'produto box.html';
+      } else {
+        alert('Email ou senha incorretos!');
+      }
+    });
+  </script>
+
+  
+  <!-- Bootstrap JS e dependências -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
