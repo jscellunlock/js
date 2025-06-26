@@ -141,29 +141,39 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
     <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
     <script src="index.js"></script>
 
-    <!-- Cabeçalho Minimal -->
+    <style>
+        /* Ajuste para o botão lateral */
+        .open-sidebar i.bi-list {
+            font-size: 1.5rem;
+            /* Aumenta o tamanho do ícone */
+        }
+
+        .open-sidebar {
+            padding: 0.5rem;
+            /* Botão com área de clique maior */
+            margin-right: 1rem;
+            /* Afasta do canto direito */
+            border-radius: 0.25rem;
+        }
+    </style>
+
+    <!-- Cabeçalho Unificado ajustado -->
     <header class="minimal border-bottom py-2">
-        <div class="container">
+        <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-                <div class="back-icon">
-                    <a></a>
-                </div>
-                <div class="logo ml-2">
-                    <a>
-                        <img src="https://i.postimg.cc/MTWSRcdr/jscell.png" class="img-fluid" alt="logo">
+                <div class="back-icon"></div>
+                <div class="logo">
+                    <a href="/">
+                        <img src="https://i.postimg.cc/MTWSRcdr/jscell.png" class="img-fluid" alt="Logo">
                     </a>
                 </div>
-                <h1 class="ml-2">jscellunlock</h1>
+                <h1 class="pl-2 mb-0">jscellunlock</h1>
             </div>
-        </div>
-    </header>
 
-    <!-- Cabeçalho Completo -->
-    <header class="complete">
-        <div class="col-12 col-md-auto">
-            <div class="shortcuts pt-0 pt-sm-0">
+            <!-- Botão único ajustado -->
+            <div>
                 <ul class="nav nav-pills nav-fill align-items-center">
-                    <li class="nav-item d-sm-none">
+                    <li class="nav-item">
                         <a class="open-sidebar" data-from="left" data-section="category">
                             <i class="bi bi-list"></i>
                         </a>
@@ -172,6 +182,7 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
             </div>
         </div>
     </header>
+
 
     <!-- Menu Principal -->
     <div class="nav-principal menu-1">
