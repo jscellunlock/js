@@ -116,7 +116,7 @@ function registrarDesbloqueio() {
     document.getElementById('unlockCount').textContent = count;
 
     // Redireciona para a página de desbloqueio
-    window.location.href = 'produto remoto.html';
+    window.location.href = 'remoto.html';
 }
 
 // Ao carregar a página, ajusta o contador se já houver login
