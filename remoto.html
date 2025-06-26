@@ -1636,78 +1636,116 @@
                     }
                 };
 
-                // ... (seu código existente de productDetails permanece o mesmo) ...
+                var details = productDetails[id] || {
+                    image: "imagem/",
+                    description: "Sem descrição disponível.",
+                    price: "N/A",
+                    delivery: "N/A",
+                    paymentLink: "https://sualoja.com/pagar"
+                };
 
-                // Modificação na função do botão "Fazer Pedido"
+                $('.servicename').text(serviceName);
+                $('#service-id').val(id);
+                $('#service-name').val(serviceName);
+
+                let extraFields = '';
+                if (serviceName.toUpperCase().includes('REMOTO')) {
+                    extraFields = `
+                <div class="form-group mt-3">
+                    <label for="anydesk-input">Seu ID AnyDesk:</label>
+                    <input type="text" id="anydesk-input" class="form-control" placeholder="Ex: 123 456 789" />
+                </div>`;
+                } else if (id === "id_c8c41c4a18675a74e01c8a20e8a0f66") {
+                    extraFields = `
+                <div class="form-group mt-3">
+                    <label for="imei-input">IMEI do Aparelho:</label>
+                    <input type="text" id="imei-input" class="form-control" placeholder="Ex: 356938035643809" />
+                </div>
+                <div class="form-group">
+                    <label for="sn-input">Número de Série (SN):</label>
+                    <input type="text" id="sn-input" class="form-control" placeholder="Ex: R58M11ABCD" />
+                </div>`;
+                }
+
+                var modalContent = `
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="badge badge-success" style="font-size:1.2em;">${details.price}</p>
+                    <p style="font-size:0.9em;margin:0;">${details.delivery}</p>
+                    ${extraFields}
+                    <a href="#" id="order-button" class="btn btn-primary btn-block mt-2">
+                        Fazer Pedido
+                    </a>
+                </div>
+                <div class="col-md-6 text-center" style="border-left: 1px solid #ccc;">
+                    <br>
+                    <img src="${details.image}" alt="Imagem do serviço" />
+                    <br><br><br>
+                    <p>${details.description}</p>
+                </div>
+            </div>
+        `;
+
+                $('#serviceDetails2').html(modalContent);
+                $('#modal-order').show();
+
+                // Faz o body do modal rolável e limita a altura máxima
+                $('#modal-order .modal-body').css({
+                    'max-height': '80vh',
+                    'overflow-y': 'auto'
+                }).scrollTop(0); // e já garante que fique no topo
+
+                // dentro de popupOrder, no handler do #order-button...
                 $('#order-button').off('click').on('click', function (e) {
                     e.preventDefault();
-
-                    // Captura os dados do formulário
-                    const anydesk = $('#anydesk-input').val().trim();
-                    const cliente = prompt("Digite seu nome:");
-                    const whatsapp = prompt("Digite seu WhatsApp:");
-
-                    if (!anydesk || !cliente || !whatsapp) {
-                        alert("Por favor, preencha todos os campos!");
+                    var anydesk = $('#anydesk-input').val().trim();
+                    if (!anydesk) {
+                        alert('Por favor, digite seu ID AnyDesk antes de continuar.');
                         return;
                     }
-
-                    // Registra o pedido no sistema
-                    registrarPedido(
-                        cliente,
-                        whatsapp,
-                        id,          // ID do produto
-                        serviceName,  // Nome do produto
-                        parseFloat(details.price.replace("R$", "").trim()) // Preço
-                    );
-
-                    // Mensagem para WhatsApp
-                    const text = `Olá, fiz um pedido do *${serviceName}* (R$ ${details.price}).\n` +
-                        `👤 Nome: ${cliente}\n` +
-                        `📱 WhatsApp: ${whatsapp}\n` +
-                        `💻 AnyDesk: ${anydesk}\n` +
-                        `📌 PIX: jshrq78@gmail.com`;
-
-                    window.open(`https://wa.me/5581973202326?text=${encodeURIComponent(text)}`, '_blank');
+                    // mensagem com PIX já incluso
+                    var text =
+                        `Olá, gostaria de fazer um pedido do *${serviceName}* pelo valor de *${details.price}*.\n` +
+                        `📌 *Pagamento via PIX*:  jshrq78@gmail.com\n` +
+                        `💻 *ID AnyDesk*: ${anydesk}`;
+                    var orderLink = 'https://wa.me/5581973202326?text=' + encodeURIComponent(text);
+                    window.open(orderLink, '_blank');
                 });
             }
 
-            // Função para registrar pedidos no LocalStorage
+            // Quando alguém faz um pedido, adiciona ao painel
             function registrarPedido(cliente, whatsapp, produtoId, produtoNome, preco) {
-                let dados = JSON.parse(localStorage.getItem('adminData')) || {
-                    pedidos: [],
-                    produtos: [
-                        // Seus produtos cadastrados (exemplo)
-                        { id: "id_405e28906322882c5be9b4b27f4c35f", nome: "Desbloqueio Xiaomi FRP", preco: 45, estoque: 10 },
-                        { id: "id_4b6538a44a1dfdc2b83477cd76dee98", nome: "Desbloqueio Samsung FRP", preco: 50, estoque: 15 }
-                    ]
-                };
+                // Carrega os dados existentes
+                let dados = JSON.parse(localStorage.getItem('adminData')) || { pedidos: [], produtos: [] };
 
-                // Cria novo pedido
+                // Cria um novo pedido
                 const novoPedido = {
-                    id: Date.now(), // ID único
+                    id: dados.pedidos.length > 0 ? Math.max(...dados.pedidos.map(p => p.id)) + 1 : 1,
                     cliente,
                     whatsapp,
                     produtoId,
                     produtoNome,
                     preco,
-                    status: "Pendente",
-                    data: new Date().toLocaleString()
+                    status: "Pendente"
                 };
 
-                // Adiciona ao histórico
+                // Adiciona ao array de pedidos
                 dados.pedidos.push(novoPedido);
 
-                // Atualiza estoque (opcional)
+                // Diminui o estoque (opcional)
                 const produto = dados.produtos.find(p => p.id === produtoId);
-                if (produto) produto.estoque -= 1;
+                if (produto && produto.estoque > 0) {
+                    produto.estoque -= 1;
+                }
 
                 // Salva no LocalStorage
                 localStorage.setItem('adminData', JSON.stringify(dados));
 
-                console.log("Pedido registrado:", novoPedido);
+                // Mensagem de confirmação
+                alert("Pedido registrado com sucesso! Aguarde nosso contato.");
             }
         </script>
+
 
         <!-- JavaScript da Busca -->
         <script>
