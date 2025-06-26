@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel de Pedidos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Painel de Pedidos</a>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <div class="card shadow-sm">
+      <div class="card-header bg-white">
+        <h5 class="mb-0">Pedidos Recebidos</h5>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-striped table-hover" id="ordersTable">
+            <thead class="table-dark">
+              <tr>
+                <th>ID do Pedido</th>
+                <th>Cliente</th>
+                <th>Serviço</th>
+                <th>Preço</th>
+                <th>Data</th>
+                <th>Status</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Linhas serão geradas dinamicamente -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // URL da API que fornece os pedidos (ajuste conforme seu servidor)
+    const API_URL = 'https://seu-dominio.com/api/orders';
+
+    // Busca pedidos do servidor e renderiza a tabela
+    async function fetchOrders() {
+      try {
+        const response = await fetch(API_URL);
+        if (!response.ok) throw new Error('Erro ao buscar pedidos');
+        const orders = await response.json();
+        renderTable(orders);
+      } catch (err) {
+        console.error(err);
+        alert('Não foi possível carregar os pedidos.');
+      }
+    }
+
+    function renderTable(orders) {
+      const tbody = document.querySelector('#ordersTable tbody');
+      tbody.innerHTML = '';
+      orders.forEach(order => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${order.id}</td>
+          <td>${order.client}</td>
+          <td>${order.service}</td>
+          <td>${order.price}</td>
+          <td>${order.date}</td>
+          <td><span class="badge ${badgeClass(order.status)}">${order.status}</span></td>
+          <td>
+            <button class="btn btn-sm btn-success" onclick="updateStatus('${order.id}', 'Concluído')">Concluir</button>
+            <button class="btn btn-sm btn-danger" onclick="updateStatus('${order.id}', 'Cancelado')">Cancelar</button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function badgeClass(status) {
+      switch(status) {
+        case 'Concluído': return 'bg-success';
+        case 'Em Andamento': return 'bg-warning text-dark';
+        case 'Cancelado': return 'bg-danger';
+        default: return 'bg-secondary';
+      }
+    }
+
+    async function updateStatus(id, newStatus) {
+      try {
+        const response = await fetch(`${API_URL}/${id}`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ status: newStatus })
+        });
+        if (!response.ok) throw new Error('Falha ao atualizar status');
+        fetchOrders();
+      } catch (err) {
+        console.error(err);
+        alert('Não foi possível atualizar o pedido.');
+      }
+    }
+
+    // Carrega pedidos ao iniciar
+    document.addEventListener('DOMContentLoaded', fetchOrders);
+  </script>
+</body>
+</html>
