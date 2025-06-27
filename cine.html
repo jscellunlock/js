@@ -3,42 +3,70 @@
 
 <head>
     <!-- Meta e Links Iniciais -->
+    <!-- Meta e Links Iniciais -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="index style.css">
-    <script src="script.js"></script>
 
+    <!-- Reset de estilos cross‑browser -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" />
+
+    <!-- Font Awesome (6.x) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        integrity="sha512-1o8j5b6d9e4f3z5Z2k7m5l5n5z" crossorigin="anonymous" />
-    <!-- custom css -->
-    <style> </style>
-    <!-- end custom css -->
-    <title>Pedido cine</title>
+
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="index style.css">
+    <script src="index.js"></script>
+
+    <title>Serviço cine</title>
     <link rel="icon" type="image/png" href="https://www.jscellunlock.com.br/jscell.png">
-    <link rel="shortcut icon" href="https://www.jscellunlock.com.br/jscell.png" type="image/png">
-    <meta name="description" content="Bem-vindo ">
-    <meta property="og:locale" content="pt_BR" />
-    <meta property="og:site_name" content="jscellunlock" />
-    <meta property="og:title" content="SERVIÇO cine" />
-    <meta property="og:description" content="Bem-vindo" />
-    <meta property="og:image" content="https://www.jscellunlock.com.br/jscell.png" />
-    <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Outras tags head -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Metadados SEO e Open Graph -->
+    <meta name="description" content="Bem-vindo ao jscellunlock Serviço cine.">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="jscellUnlock">
+    <meta property="og:title" content="jscellUnlock">
+    <meta property="og:description" content="Descubra nossas soluções e Desbloqueio seu aparelho.">
+    <meta property="og:image" content="https://www.jscellunlock.com.br/jscell.png">
+    <meta property="og:type" content="website">
+
+    <!-- HTML5 Shiv e Respond.js para IE8 e IE9 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+
+    <!-- jQuery (mantém apenas 3.6.0) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap Bundle JS (inclui Popper) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkH+8abtTE1Pi6jizoUO7XKp0q5V5jRL+49M+CjUV9i7RsweNktz"
+        crossorigin="anonymous"></script>
+
+    <!-- Babel Standalone para transpilar ES6+ no cliente -->
+    <script defer src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Seu script de rastreamento (deferido) -->
+    <script defer data-domain="jscellunlock.com.br" src="https://jscellunlock.com.br/js/script.js"></script>
+
+    <!-- Font Awesome JS Kit (opcional) -->
+    <script defer src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <head>
         <title>Marquee Example</title>
@@ -227,6 +255,14 @@
                 </div>
                 <!-- Itens à Direita -->
                 <div class="right-items d-flex align-items-center">
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn btn btn-primary fonte-menu"
+                            onclick="window.location.href='painel.html'">
+                            Painel
+                        </button>
+                    </div>
+
                     <!-- Grupo de Botões com Dropdown -->
                     <div class="btn-group">
                         <div class="dropdown">
@@ -235,7 +271,7 @@
                                 <a class="dropdown-item" href="#">Serviço imei</a>
                                 <a class="dropdown-item" href="#">Serviço de servidor</a>
                                 <a class="dropdown-item" href="remoto.html">Serviço remoto</a>
-                                <a class="dropdown-item" href="cine.html">Cine tela </a>
+                                <a class="dropdown-item" href="cine.html">Serviço Cine tela </a>
                             </div>
                         </div>
 
@@ -281,12 +317,11 @@
             </div>
             <div class="sidebar-content">
                 <ul class="navbar-nav ml-auto mt-2 nav-categories-level-1 border-top">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link fonte-menu d-flex align-items-center
-          " data-id=527650>
-
-                        </a>
-                    </li>
+                    
+                    <button class="dropdown-btn btn btn-primary fonte-menu"
+                        onclick="window.location.href='painel.html'">
+                        Painel
+                     </button>
 
                     <li class="nav-item">
                         <a class="nav-link fonte-menu" href="#" class="btn btn-primary"
@@ -307,10 +342,10 @@
                         </a>
                     </li>
                     <!-- Botão de Sair posicionado à direita com espaçamento -->
-                    <div class="logout">
-                        <button id="logout">Sair</button>
+                    
+                        <button  id="logout" >Sair</button>
 
-                    </div>
+                    
                 </ul>
             </div>
         </div>
@@ -483,7 +518,7 @@
     <style>
         /* Fundo azul claro para toda a página */
         body {
-            background-color: #2b3b53;
+            background-color: #2b3b58;
         }
 
         .col-group-icon {
@@ -663,7 +698,7 @@
                                             </div>
                                             <div class="col mw-360">
                                                 <div class="">
-                                                    <span class="searchme"> 🟠-GLOBO PLAY CANAIS ✅
+                                                    <span class="searchme"> 🟠-GLOBO PLAY ✅
                                                     </span>
                                                     <br />
                                                     <div class="text-muted">
@@ -1006,12 +1041,960 @@
                                     </div>
                                 </div>
 
+                                <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                    id="id_1c1d4df596d01da60385f0bb17a4a9e"
+                                    onclick="popupOrder('id_1c1d4df596d01da60385f0bb17a4a9e','🟢-📺🔥 VIVO PLAY 30 DIAS ✅');">
+                                    <div class="card w-100 h-100 card-product rounded">
+                                        <div class="row h-100">
+                                            <div class="col-auto col-group-icon">
+                                                <div
+                                                    class="bg-gray h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                    V</div>
+                                            </div>
+                                            <div class="col mw-360">
+                                                <div class="">
+                                                    <span class="searchme">🟢-VIVO PLAY ✅
+                                                    </span>
+                                                    <br />
+                                                    <div class="text-muted">
+                                                        { 🗓️ 30 DIAS }
+                                                    </div>
+                                                    <span class="badge badge-success">
+                                                        R$ 21,90
+                                                    </span>
+                                                    <span class="badge badge-warning">
+                                                        5 min
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div><!-- service-list -->
 
-                       
+                        <div class="row group active  g_1">
 
+                            <div class="col-12">
+                                <h3 class="title"><span> PLANOS DE 90 DIAS ✅</span>
+                                </h3>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_1c1d4df596d01da60385f0bb17a4a9el"
+                                onclick="popupOrder('id_1c1d4df596d01da60385f0bb17a4a9el','📺 CRUNCHYROLL PREMIUM 90 DIAS ✅');">
+                                <div class="card w-100 h-100 card-product rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                C</div>
+                                        </div>
+                                        <div class="col mw-360">
+                                            <div class="">
+                                                <span class="searchme">📺 CRUNCHYROLL ✅
+                                                </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 90 DIAS }
+                                                </div>
+                                                <span class="badge badge-success">
+                                                    R$ 28,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_1c1d4df596d01da60385f0bb17a4a9ed"
+                                onclick="popupOrder('id_1c1d4df596d01da60385f0bb17a4a9ed','📺 PARAMOUNT PLUS 90 DIAS ✅');">
+                                <div class="card w-100 h-100 card-product rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                P</div>
+                                        </div>
+                                        <div class="col mw-360">
+                                            <div class="">
+                                                <span class="searchme"> PARAMOUNT PLUS ✅
+                                                </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 90 DIAS }
+                                                </div>
+                                                <span class="badge badge-success">
+                                                    R$ 22,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_1c1d4df596d01da60385f0bb17a4a9em"
+                                onclick="popupOrder('id_1c1d4df596d01da60385f0bb17a4a9em','📺🔥 NETFLIX PREMIUM 4K 90 DIAS  ] ✅');">
+                                <div class="card w-100 h-100 card-product rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                N</div>
+                                        </div>
+                                        <div class="col mw-360">
+                                            <div class="">
+                                                <span class="searchme">NETFLIX PREMIUM 4K ✅
+                                                </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 90 DIAS }
+                                                </div>
+                                                <span class="badge badge-success">
+                                                    R$ 56,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_1c1d4df596d01da60385f0bb17a4a9ez"
+                                onclick="popupOrder('id_1c1d4df596d01da60385f0bb17a4a9ez','📺🔥 CLARO TV + CANAIS 90 DIAS ✅');">
+                                <div class="card w-100 h-100 card-product rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                C</div>
+                                        </div>
+                                        <div class="col mw-360">
+                                            <div class="">
+                                                <span class="searchme">CLARO TV + CANAIS ✅
+                                                </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 90 DIAS }
+                                                </div>
+                                                <span class="badge badge-success">
+                                                    R$ 32,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_1c1d4df596d01da60385f0bb17a4a9et"
+                                onclick="popupOrder('id_1c1d4df596d01da60385f0bb17a4a9et','UFC PASS PREMIUM 90 DIAS ] ✅');">
+                                <div class="card w-100 h-100 card-product rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                U</div>
+                                        </div>
+                                        <div class="col mw-360">
+                                            <div class="">
+                                                <span class="searchme">UFC PASS PREMIUM ✅
+                                                </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 90 DIAS }
+                                                </div>
+                                                <span class="badge badge-success">
+                                                    R$ 40,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 min
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_1c1d4df596d01da60385f0bb17a4a9ey"
+                                onclick="popupOrder('id_1c1d4df596d01da60385f0bb17a4a9ey','NBA LEAGUE PASS 90 DIAS ] ✅');">
+                                <div class="card w-100 h-100 card-product rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                N</div>
+                                        </div>
+                                        <div class="col mw-360">
+                                            <div class="">
+                                                <span class="searchme">NBA LEAGUE PASS ✅
+                                                </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 90 DIAS }
+                                                </div>
+                                                <span class="badge badge-success">
+                                                    R$ 80,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_1c1d4df596d01da60385f0bb17a4a950"
+                                onclick="popupOrder('id_1c1d4df596d01da60385f0bb17a4a950','🧡 VIKI RAKUTEN PREMIUM 90 DIAS ✅');">
+                                <div class="card w-100 h-100 card-product rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                V</div>
+                                        </div>
+                                        <div class="col mw-360">
+                                            <div class="">
+                                                <span class="searchme">🧡VIKI RAKUTEN PREMIUM ✅
+                                                </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 90 DIAS }
+                                                </div>
+                                                <span class="badge badge-success">
+                                                    R$ 30,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_1c1d4df596d01da60385f0bb17a4a951"
+                                onclick="popupOrder('id_1c1d4df596d01da60385f0bb17a4a951','🧡DAZN PREMIUM 90 DIAS  ✅');">
+                                <div class="card w-100 h-100 card-product rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                D</div>
+                                        </div>
+                                        <div class="col mw-360">
+                                            <div class="">
+                                                <span class="searchme">🧡DAZN PREMIUM ✅
+                                                </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 90 DIAS }
+                                                </div>
+                                                <span class="badge badge-success">
+                                                    R$ 46,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_1c1d4df596d01da60385f0bb17a4a952"
+                                onclick="popupOrder('id_1c1d4df596d01da60385f0bb17a4a952','🧡FLA TV PREMIUM 90 DIAS ✅');">
+                                <div class="card w-100 h-100 card-product rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                F</div>
+                                        </div>
+                                        <div class="col mw-360">
+                                            <div class="">
+                                                <span class="searchme">🧡FLA TV PREMIUM ✅
+                                                </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 90 DIAS }
+                                                </div>
+                                                <span class="badge badge-success">
+                                                    R$ 54,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_1c1d4df596d01da60385f0bb17a4a953"
+                                onclick="popupOrder('id_1c1d4df596d01da60385f0bb17a4a953','🧡LOOKE PREMIUM 90 DIAS ✅');">
+                                <div class="card w-100 h-100 card-product rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                L</div>
+                                        </div>
+                                        <div class="col mw-360">
+                                            <div class="">
+                                                <span class="searchme">🧡LOOKE PREMIUM ✅
+                                                </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 90 DIAS }
+                                                </div>
+                                                <span class="badge badge-success">
+                                                    R$ 32,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_1c1d4df596d01da60385f0bb17a4a954"
+                                onclick="popupOrder('id_1c1d4df596d01da60385f0bb17a4a954','🧡VIVO PLAY 90 DIAS  ✅');">
+                                <div class="card w-100 h-100 card-product rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                V</div>
+                                        </div>
+                                        <div class="col mw-360">
+                                            <div class="">
+                                                <span class="searchme">🧡VIVO PLAY ✅
+                                                </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 90 DIAS }
+                                                </div>
+                                                <span class="badge badge-success">
+                                                    R$ 44,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row group active  g_2">
+
+                            <div class="col-12">
+                                <h3 class="title"><span> PLANOS DE 180 DIAS ✅</span>
+                                </h3>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_798cebccb32617ad94123450fd137104"
+                                onclick="popupOrder('798cebccb32617ad94123450fd137104','CRUNCHYROLL PREMIUM 180 DIAS ✅');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                C</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme"> CRUNCHYROLL ✅ </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                   PREMIUM { 🗓️ 180 DIAS }
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 80,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_168908dd3227b8358eababa07fcaf091"
+                                onclick="popupOrder('168908dd3227b8358eababa07fcaf091','PARAMOUNT PLUS 180 DIAS ✅');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                P</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme"> PARAMOUNT PLUS ✅
+                                                </span> <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 180 DIAS } 
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 32,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 Min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_11f524c3fbfeeca4aa916edcb6b6392e"
+                                onclick="popupOrder('11f524c3fbfeeca4aa916edcb6b6392e','NETFLIX PREMIUM 180 DIAS ✅ ');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                N</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme"> NETFLIX PREMIUM ✅ </span> <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 180 DIAS } 
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$  129,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 Min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_d4b2aeb2453bdadaa45cbe9882ffefcf"
+                                onclick="popupOrder('d4b2aeb2453bdadaa45cbe9882ffefcf','PRIME VIDEO 180 DIAS');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                P</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme"> PRIME VIDEO ✅
+                                                </span> <br />
+                                                <div class="text-muted">
+                                                   { 🗓️ 180 DIAS } 
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 70,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 Min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_d2ed45a52bc0edfa11c2064e9edee8bf"
+                                onclick="popupOrder('d2ed45a52bc0edfa11c2064e9edee8bf','GLOBO PLAY + CANAIS 180 DIAS');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                G</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme"> GLOBO PLAY ✅ </span> <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 180 DIAS } 
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 60,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 Min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_043c3d7e489c69b48737cc0c92d0f3a2"
+                                onclick="popupOrder('043c3d7e489c69b48737cc0c92d0f3a2','CLARO TV 180 DIAS');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                C</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme"> CLARO TV ✅ </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 180 DIAS } 
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 60,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 Min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_043c3d7e489c69b48737cc0c92d0f3a"
+                                onclick="popupOrder('043c3d7e489c69b48737cc0c92d0f3a','VIKI RAKUTEN PREMIUM 180 DIAS');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                V</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme"> VIKI RAKUTEN PREMIUM ✅ </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 180 DIAS } 
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 70,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 Min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_043c3d7e489c69b48737cc0c92d0f3"
+                                onclick="popupOrder('043c3d7e489c69b48737cc0c92d0f3','UFC PASS PREMIUM 180 DIAS');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                U</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme">UFC PASS PREMIUM ✅ </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 180 DIAS } 
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 100,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 Min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_043c3d7e489c69b48737cc0c92d0f"
+                                onclick="popupOrder('043c3d7e489c69b48737cc0c92d0f','NBA LEAGUE PASS Premium ⤵️ 180 DIAS');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                N</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme">NBA LEAGUE PASS ✅ </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 180 DIAS } 
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 150,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 Min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_043c3d7e489c69b48737cc0c92d0"
+                                onclick="popupOrder('043c3d7e489c69b48737cc0c92d0','ANIME FIRE PREMIUM ⤵️ 180 DIAS');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                A</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme">ANIME FIRE PREMIUM ✅ </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 180 DIAS } 
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 49,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 Min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_043c3d7e489c69b48737cc0c92d"
+                                onclick="popupOrder('043c3d7e489c69b48737cc0c92d','DAZN PREMIUM ⤵️ 180 DIAS');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                D</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme">DAZN PREMIUM ✅ </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 180 DIAS } 
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 79,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 Min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_043c3d7e489c69b48737cc0c92"
+                                onclick="popupOrder('043c3d7e489c69b48737cc0c92','FLA TV PREMIUM ⤵️ 180 DIAS');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                F</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme">FLA TV PREMIUM ✅ </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 180 DIAS } 
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 109,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 Min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_043c3d7e489c69b48737cc0c9"
+                                onclick="popupOrder('043c3d7e489c69b48737cc0c9','LOOKE PREMIUM ⤵️ 180 DIAS');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                L</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme">LOOKE PREMIUM ✅ </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 180 DIAS } 
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 69,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 Min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_043c3d7e489c69b48737cc0c"
+                                onclick="popupOrder('043c3d7e489c69b48737cc0c','VIVO PLAY ⤵️ 180 DIAS');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                V</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme">VIVO PLAY ✅ </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                    { 🗓️ 180 DIAS } 
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 79,90
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    5 Min
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row group active  g_3">
+
+                            <div class="col-12">
+                                <h3 class="title"><span> ♨️</span>
+                                </h3>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_4daa3db355ef2b0e64b472968cb70f0d"
+                                onclick="popupOrder('4daa3db355ef2b0e64b472968cb70f0d',' ♨️');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                A</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme">  ♨️ </span> <br />
+                                                <div class="text-muted">
+                                                     ♨️
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 0
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    1-10 Minutos
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_b7892fb3c2f009c65f686f6355c895b5"
+                                onclick="popupOrder('b7892fb3c2f009c65f686f6355c895b5',' ♨️');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                A</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme">  ♨️ </span> <br />
+                                                <div class="text-muted">
+                                                     ♨️
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 0
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    1-10 Minutos
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_af3303f852abeccd793068486a391626"
+                                onclick="popupOrder('af3303f852abeccd793068486a391626',' ♨️');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                A</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme">  ♨️
+
+                                                </span> <br />
+                                                <div class="text-muted">
+                                                    ♨️
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 0
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    1-10 Minutos
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_958adb57686c2fdec5796398de5f317a"
+                                onclick="popupOrder('958adb57686c2fdec5796398de5f317a',' ♨️');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                A</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme">  ♨️ </span>
+                                                <br />
+                                                <div class="text-muted">
+                                                     ♨️
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 0
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    1-30 Minutos
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_90794e3b050f815354e3e29e977a88ab"
+                                onclick="popupOrder('90794e3b050f815354e3e29e977a88ab',' ♨️');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                A</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme">  ♨️ </span> <br />
+                                                <div class="text-muted">
+                                                     ♨️
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 0
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    1-10 Minutos
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  mb-4  bottom-space cursor-pointer service active "
+                                id="id_e820a45f1dfc7b95282d10b6087e11c0"
+                                onclick="popupOrder('e820a45f1dfc7b95282d10b6087e11c0',' ♨️');">
+                                <div class="card w-100 h-100 card-product  rounded">
+                                    <div class="row h-100">
+                                        <div class="col-auto col-group-icon">
+                                            <div
+                                                class="bg-gray  h-100 d-flex align-items-center p-3 p-sm-3 text-uppercase">
+                                                A</div>
+                                        </div>
+                                        <div class="col   mw-360">
+                                            <div class="">
+                                                <span class="searchme"> ♨️ </span> <br />
+                                                <div class="text-muted">
+                                                   ♨️
+                                                </div>
+                                                <span class=" badge badge-success">
+                                                    R$ 0
+                                                </span>
+                                                <span class="badge badge-warning">
+                                                    1-10 Minutos
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
 
                     </div><!-- flex-column -->
                 </form>
@@ -1108,38 +2091,38 @@
 
                     "4daa3db355ef2b0e64b472968cb70f0d": {
                         image: "imagem/-96x96-.png",
-                        description: "Descrição detalhada do EFT PRO DONGAL aluguel.",
-                        price: "R$2",
+                        description: "Descrição detalhada ",
+                        price: "R$0",
                         delivery: "24h"
                     },
                     "b7892fb3c2f009c65f686f6355c895b5": {
                         image: "imagem/favico.png",
-                        description: "Descrição detalhada do Hydra - ALUGUEL DE DONGAL.",
-                        price: "R$2",
+                        description: "Descrição detalhada ",
+                        price: "R$0",
                         delivery: "48h"
                     },
                     "af3303f852abeccd793068486a391626": {
                         image: "imagem/favicon.png",
-                        description: "Descrição detalhada do Octoplus LG & ALUGUEL DE DONGAL SAMSUNG DE 30 A 60 MINUTOS.",
-                        price: "R$3",
+                        description: "Descrição detalhada ",
+                        price: "R$0",
                         delivery: "36h"
                     },
                     "958adb57686c2fdec5796398de5f317a": {
                         image: "imagem/",
-                        description: "Descrição detalhada do SIGMA PLUS - ALUGUEL DE DONGAL DE 30 A 60 MINUTOS.",
-                        price: "R$5",
+                        description: "Descrição detalhada ",
+                        price: "R$0",
                         delivery: "72h"
                     },
                     "90794e3b050f815354e3e29e977a88ab": {
                         image: "caminho/para/imagem5.jpg",
-                        description: "Descrição detalhada do UMT - ALUGUEL DE DONGAL.",
-                        price: "R$2",
+                        description: "Descrição detalhada .",
+                        price: "R$0",
                         delivery: "12h"
                     },
                     "e820a45f1dfc7b95282d10b6087e11c0": {
                         image: "caminho/para/imagem6.jpg",
-                        description: "Descrição detalhada do UMT PRO DONGAL aluguel.",
-                        price: "R$ 2",
+                        description: "Descrição detalhada .",
+                        price: "R$ 0",
                         delivery: "18h"
                     },
 
@@ -1235,114 +2218,170 @@
                         price: "R$ 16,90",
                         delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
-
+                    "id_1c1d4df596d01da60385f0bb17a4a9e": {
+                        image: "imagem/",
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 30 dias </br>🏅 Vantagens Vivo Play ⤵️</br>📺 Acesso a filmes, séries e conteúdos sob demanda</br>📡 Canais ao vivo de entretenimento, esportes e notícias</br>🎬 Opção de aluguel de lançamentos exclusivos</br>📱 Disponível para celular, Smart TV, PC e tablets</br>🔄 Modo offline para assistir quando quiser</br>🎯 Faça o seu pedido!</span>.",
+                        price: "R$ 21,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
+                    },
 
 
 
                     "id_1c1d4df596d01da60385f0bb17a4a9el": {
                         image: "imagem/",
-                        description: "<span style='font-size: 0.8em;'>🔰 Suporte de todo os planos </br>✅ Planos com garantia de 180 dias </br>🏅 Vantagens Globoplay + Canais + Telecine + Premiere Premium</br>🎯 Faça o seu pedido!</br> mais informaçao do produto na pagina de inicio tem.</span>.",
-                        price: "R$ 75,90",
-                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min a 3 horas"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 90 dias </br>🏅 Vantagens Crunchyroll Premium ⤵️</br>🎌 Acesse animes exclusivos e lançamentos simultâneos com o Japão</br>📡 Episódios sem anúncios e em alta qualidade</br>📺 Opção de legendas e dublagens em diversos idiomas</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido!</span>.",
+                        price: "R$ 28,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     "id_1c1d4df596d01da60385f0bb17a4a9ed": {
                         image: "imagem/",
-                        description: "<span style='font-size: 0.8em;'>🔰 Suporte de todo os planos </br>✅ Planos com garantia de 180 dias </br>🏅 Vantagens Globoplay Completa Premium </br>🎯 Faça o seu pedido!</br> mais informaçao do produto na pagina de inicio tem.</span>.",
-                        price: "R$ 88,90",
-                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min a 3 horas"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 90 dias </br>🏅 Vantagens Paramount+ Premium ⤵️</br>🎬 Acesse séries e filmes exclusivos da Paramount+</br>📡 Produções originais e lançamentos da plataforma</br>📺 Qualidade HD e 4K para máxima experiência de visualização</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido!</span>.",
+                        price: "R$ 22,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     "id_1c1d4df596d01da60385f0bb17a4a9em": {
                         image: "imagem/",
-                        description: "<span style='font-size: 0.8em;'>🔰 Suporte de todo os planos </br>✅ Planos com garantia de 365 dias </br>🏅 Vantagens Globoplay + Canais Premium</br>🎯 Faça o seu pedido!</br> mais informaçao do produto na pagina de inicio tem.</span>.",
-                        price: "R$ 58,60",
-                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min a 3 horas"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 90 dias </br>🏅 Vantagens Netflix Premium 4K ⤵️</br>🎬 Acesso ao catálogo completo de filmes, séries e documentários exclusivos</br>📡 Qualidade Ultra HD 4K para máxima experiência de visualização</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido!</span>.",
+                        price: "R$ 56,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     "id_1c1d4df596d01da60385f0bb17a4a9ez": {
                         image: "imagem/",
-                        description: "<span style='font-size: 0.8em;'>🔰 Suporte de todo os planos </br>✅ Planos com garantia de 365 dias </br>🏅 Vantagens Globoplay + Canais + Telecine Premium</br>🎯 Faça o seu pedido!</br> mais informaçao do produto na pagina de inicio tem.</span>.",
-                        price: "R$ 74,40",
-                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min a 3 horas"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 90 dias </br>🏅 Vantagens Claro TV + Canais Premium ⤵️</br>📡 Acesso a uma variedade de canais ao vivo de entretenimento, esportes e notícias</br>🎬 Filmes, séries e conteúdos exclusivos para toda a família</br>📺 Qualidade HD para máxima experiência de visualização</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido!</span>.",
+                        price: "R$ 32,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     "id_1c1d4df596d01da60385f0bb17a4a9et": {
                         image: "imagem/",
-                        description: "<span style='font-size: 0.8em;'>🔰 Suporte de todo os planos </br>✅ Planos com garantia de 365 dias </br>🏅 Vantagens Globoplay + Canais + Premiere Premium</br>🎯 Faça o seu pedido!</br> mais informaçao do produto na pagina de inicio tem.</span>.",
-                        price: "R$ 87,94",
-                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min a 3 horas"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 90 dias </br>🏅 Vantagens UFC Pass Premium ⤵️</br>🥊 Transmissão ao vivo de eventos exclusivos do UFC</br>📡 Acesso a lutas históricas e programação original</br>📺 Qualidade HD e 4K para máxima experiência de visualização</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido!</span>.",
+                        price: "R$ 40,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     "id_1c1d4df596d01da60385f0bb17a4a9ey": {
                         image: "imagem/",
-                        description: "<span style='font-size: 0.8em;'>🔰 Suporte de todo os planos </br>✅ Planos com garantia de 365 dias </br>🏅 Vantagens Globoplay + Canais + Telecine + Premiere Premium</br>🎯 Faça o seu pedido!</br> mais informaçao do produto na pagina de inicio tem.</span>.",
-                        price: "R$ 98,50",
-                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min a 3 horas"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 90 dias </br>🏅 Vantagens NBA League Pass Premium ⤵️</br>🏀 Acompanhe todos os jogos da NBA ao vivo e on-demand</br>📡 Acesso a replays, estatísticas e análises exclusivas</br>📺 Qualidade HD e 4K para máxima experiência esportiva</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido!</span>.",
+                        price: "R$ 80,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     "id_1c1d4df596d01da60385f0bb17a4a950": {
                         image: "imagem/",
-                        description: "<span style='font-size: 0.8em;'>🔰 Suporte de todo os planos </br>✅ Planos com garantia de 30 dias ▶️ 2 ACESSOS</br>🏅 Vantagens Globoplay + Canais</br>🎯 Faça o seu pedido!</br> mais informaçao do produto na pagina de inicio tem.</span>.",
-                        price: "R$ 23,90",
-                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min a 3 horas"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 90 dias</br>🏅 Vantagens Viki Rakuten Premium ⤵️</br>🎌 Acesso a dramas asiáticos, filmes e variedades exclusivos</br>📡 Conteúdos legendados em diversos idiomas</br>📺 Qualidade HD para uma experiência superior</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido!</span>.",
+                        price: "R$ 30,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     "id_1c1d4df596d01da60385f0bb17a4a951": {
                         image: "imagem/",
-                        description: "<span style='font-size: 0.8em;'>🔰 Suporte de todo os planos </br>✅ Planos com garantia de 30 dias ▶️ 3 ACESSOS</br>🏅 Vantagens Globoplay + Canais</br>🎯 Faça o seu pedido!</br> mais informaçao do produto na pagina de inicio tem.</span>.",
-                        price: "R$ 29,90",
-                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min a 3 horas"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 90 dias</br>🏅 Vantagens DAZN Premium ⤵️</br>⚽ Transmissão ao vivo de campeonatos nacionais e internacionais</br>📺 Qualidade Full HD e 4K para uma experiência imersiva</br>📱 Assista no celular, Smart TV, PC e consoles</br>🔄 Replay e melhores momentos disponíveis on-demand</br>🎯 Faça o seu pedido!</span>.",
+                        price: "R$ 46,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     "id_1c1d4df596d01da60385f0bb17a4a952": {
                         image: "imagem/",
-                        description: "<span style='font-size: 0.8em;'>🔰 Suporte de todo os planos </br>✅ Planos com garantia de 30 dias ▶️ 4 ACESSOS</br>🏅 Vantagens Globoplay + Canais</br>🎯 Faça o seu pedido!</br> mais informaçao do produto na pagina de inicio tem.</span>.",
-                        price: "R$ 35,90",
-                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min a 3 horas"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 90 dias</br>🏅 Vantagens Fla TV Premium ⤵️</br>⚽ Acompanhe conteúdos exclusivos do Flamengo</br>📺 Transmissões ao vivo, bastidores e entrevistas exclusivas</br>📱 Acesso no celular, Smart TV, PC e consoles</br>🎥 Replay e melhores momentos on-demand</br>🎯 Faça o seu pedido!</span>.",
+                        price: "R$ 54,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     "id_1c1d4df596d01da60385f0bb17a4a953": {
                         image: "imagem/",
-                        description: "<span style='font-size: 0.8em;'>🔰 Suporte de todo os planos </br>✅ Planos com garantia de 30 dias ▶️ 5 ACESSOS</br>🏅 Vantagens Globoplay + Canais</br>🎯 Faça o seu pedido!</br> mais informaçao do produto na pagina de inicio tem.</span>.",
-                        price: "R$ 39,90",
-                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min a 3 horas"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 90 dias</br>🏅 Vantagens Looke Premium ⤵️</br>🎬 Acesso a milhares de filmes e séries nacionais e internacionais</br>📺 Qualidade HD e 4K para uma experiência cinematográfica</br>📱 Disponível para celular, Smart TV, PC e consoles</br>🔄 Modo offline para assistir sem internet</br>🎯 Faça o seu pedido!</span>.",
+                        price: "R$ 32,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     "id_1c1d4df596d01da60385f0bb17a4a954": {
                         image: "imagem/",
-                        description: "<span style='font-size: 0.8em;'>🔰 Suporte de todo os planos </br>✅ Planos com garantia de 30 dias ▶️ 10 ACESSOS</br>🏅 Vantagens Globoplay + Canais</br>🎯 Faça o seu pedido!</br> mais informaçao do produto na pagina de inicio tem.</span>.",
-                        price: "R$ 66,90",
-                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min a 3 horas"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 90 dias</br>🏅 Vantagens Vivo Play ⤵️</br>📺 Acesso a filmes, séries e conteúdos sob demanda</br>📡 Canais ao vivo de entretenimento, esportes e notícias</br>🎬 Opção de aluguel de lançamentos exclusivos</br>📱 Disponível para celular, Smart TV, PC e tablets</br>🔄 Modo offline para assistir quando quiser</br>🎯 Faça o seu pedido!</span>.",
+                        price: "R$ 44,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
+
+
 
                     "798cebccb32617ad94123450fd137104": {
                         image: "caminho/para/imagem12.jpg",
-                        description: "Descrição detalhada ','Chimera Tool aluguel - (  Samsung ) PACK ✅ V1.",
-                        price: "R$12",
-                        delivery: "48h"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 180 dias</br>🏅 Vantagens Crunchyroll Premium ⤵️</br>🎥 Acesso ilimitado a animes populares e exclusivos</br>📡 Episódios lançados poucas horas após a estreia no Japão</br>📺 Modo offline para assistir sem internet</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido! </span>",
+                        price: "R$ 80,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     // Adicionando novos produtos aqui
                     "168908dd3227b8358eababa07fcaf091": {
                         image: "caminho/para/imagem13.jpg",
-                        description: "Chimera Tool RENT - ( Professional ) PACK ✅ 48 HOURS",
-                        price: "R$16",
-                        delivery: "72h"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 180 dias</br>🏅 Vantagens Paramount+ Premium ⤵️</br>🎬 Acesse séries e filmes exclusivos da Paramount+</br>📡 Produções originais e lançamentos da plataforma</br>📺 Qualidade HD e 4K para máxima experiência de visualização</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido! </span>",
+                        price: "R$ 32,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     "11f524c3fbfeeca4aa916edcb6b6392e": {
                         image: "caminho/para/imagem14.jpg",
-                        description: "Chimera Tool RENT - ( Professional ) PACK ✅ 5 days Login",
-                        price: "R$20",
-                        delivery: "5d"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 180 dias</br>🏅 Vantagens Netflix Premium 4K ⤵️</br>🎬 Acesso ao catálogo completo de séries, filmes e documentários</br>📡 Streaming em qualidade Ultra HD 4K</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido! </span>",
+                        price: "R$ 129,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     "d4b2aeb2453bdadaa45cbe9882ffefcf": {
                         image: "caminho/para/imagem15.jpg",
-                        description: "DT Pro Tool {Digital} Login Rent 2-4 days",
-                        price: "R$4",
-                        delivery: "2-4d"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 180 dias</br>🏅 Vantagens Prime Video Premium ⤵️</br>🎬 Acesso ao catálogo completo do Prime Video com séries e filmes exclusivos</br>📡 Conteúdos originais e lançamentos frequentes</br>📺 Qualidade HD e 4K para uma experiência superior</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido! </span>",
+                        price: "R$ 70,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     "d2ed45a52bc0edfa11c2064e9edee8bf": {
                         image: "caminho/para/imagem16.jpg",
-                        description: "Evo Tool Rent [ EVONDT TOOLS ]",
-                        price: "R$4.15",
-                        delivery: "1d"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 180 dias</br>🏅 Vantagens Globoplay + Canais Premium ⤵️</br>📡 Acesso ao catálogo completo do Globoplay e canais ao vivo</br>🎬 Séries, filmes, novelas e jornalismo da Globo</br>📺 Qualidade HD para uma experiência superior</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido! </span>",
+                        price: "R$ 60,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     },
                     "043c3d7e489c69b48737cc0c92d0f3a2": {
                         image: "caminho/para/imagem17.jpg",
-                        description: "Pandora Tool {Digital} Login Rent",
-                        price: "R$ 15",
-                        delivery: "24h"
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 180 dias</br>🏅 Vantagens Claro TV + Canais Premium ⤵️</br>📡 Acesso a uma ampla variedade de canais ao vivo e sob demanda</br>🎬 Filmes, séries, esportes e programação infantil inclusos</br>📺 Qualidade HD e compatível com múltiplos dispositivos</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido! </span>",
+                        price: "R$ 60,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
+                    },
+                    "043c3d7e489c69b48737cc0c92d0f3a": {
+                        image: "caminho/para/imagem17.jpg",
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 180 dias</br>🏅 Vantagens Viki Rakuten Premium ⤵️</br>🎥 Acesso a doramas, filmes e séries asiáticas exclusivas</br>📡 Conteúdo legendado em vários idiomas</br>📺 Modo offline para assistir sem internet</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido! </span>",
+                        price: "R$ 70,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
+                    },
+                    "043c3d7e489c69b48737cc0c92d0f3": {
+                        image: "caminho/para/imagem17.jpg",
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 180 dias</br>🏅 Vantagens UFC Pass Premium ⤵️</br>🥊 Acesso completo a lutas ao vivo e eventos exclusivos do UFC</br>📡 Conteúdos sob demanda, replays e bastidores das lutas</br>📺 Qualidade HD e 4K para a melhor experiência esportiva</br>📺 Qualidade HD e 4K para a melhor experiência esportiva</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que nviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido! </span>",
+                        price: "R$ 100,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
+                    },
+                    "043c3d7e489c69b48737cc0c92d0f": {
+                        image: "caminho/para/imagem17.jpg",
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 180 dias</br>🏅 Vantagens NBA League Pass Premium ⤵️</br>🏀 Assista a todos os jogos da NBA ao vivo e sob demanda</br>📡 Cobertura completa, replays e análise dos jogos</br>📺 Qualidade HD e 4K para máxima experiência esportiva</br>📱 Disponível para celular, Smart TV, PC e tablets</br>Obs: Em caso de falha na renovação ou qualquer problema que inviabilize o suporte à conta, um novo acesso será disponibilizado sem custo adicional.</br>🎯 Faça o seu pedido! </span>",
+                        price: "R$ 150,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
+                    },
+                    "043c3d7e489c69b48737cc0c92d0": {
+                        image: "caminho/para/imagem17.jpg",
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 180 dias</br>🏅 Vantagens Anime Fire Premium ⤵️</br>🎥 Acesso ilimitado a animes legendados e dublados</br>🔥 Novos episódios lançados rapidamente</br>📺 Qualidade HD e 4K para máxima imersão</br>📱 Disponível para celular, Smart TV, PC e consoles</br>🎯 Faça o seu pedido! </span>",
+                        price: "R$ 49,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
+                    },
+                    "043c3d7e489c69b48737cc0c92d": {
+                        image: "caminho/para/imagem17.jpg",
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 180 dias</br>🏅 Vantagens DAZN Premium ⤵️</br>⚽ Transmissão ao vivo de campeonatos nacionais e internacionais</br>📺 Qualidade Full HD e 4K para uma experiência imersiva</br>📱 Assista no celular, Smart TV, PC e consoles</br>🔄 Replay e melhores momentos disponíveis on-demand</br>🎯 Faça o seu pedido! </span>",
+                        price: "R$ 79,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
+                    },
+                    "043c3d7e489c69b48737cc0c92": {
+                        image: "caminho/para/imagem17.jpg",
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 180 dias</br>🏅 Vantagens Fla TV Premium ⤵️</br>⚽ Acompanhe conteúdos exclusivos do Flamengo</br>📺 Transmissões ao vivo, bastidores e entrevistas exclusivas</br>📱 Acesso no celular, Smart TV, PC e consoles</br>🎥 Replay e melhores momentos on-demand</br>🎯 Faça o seu pedido! </span>",
+                        price: "R$ 109,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
+                    },
+                    "043c3d7e489c69b48737cc0c9": {
+                        image: "caminho/para/imagem1.jpg",
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 180 dias</br>🏅 Vantagens Looke Premium ⤵️</br>🎬 Acesso a milhares de filmes e séries nacionais e internacionais</br>📺 Qualidade HD e 4K para uma experiência cinematográfica</br>📱 Disponível para celular, Smart TV, PC e consoles</br>🔄 Modo offline para assistir sem internet</br>🎯 Faça o seu pedido! </span>",
+                        price: "R$ 69,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
+                    },
+                    "043c3d7e489c69b48737cc0c": {
+                        image: "caminho/para/imagem.jpg",
+                        description: "<span style='font-size: 0.8em;'>✅ Planos com garantia de 180 dias</br>🏅 Vantagens Vivo Play ⤵️</br>📺 Acesso a filmes, séries e conteúdos sob demanda</br>📡 Canais ao vivo de entretenimento, esportes e notícias</br>🎬 Opção de aluguel de lançamentos exclusivos</br>📱 Disponível para celular, Smart TV, PC e tablets</br>🔄 Modo offline para assistir quando quiser</br>🎯 Faça o seu pedido! </span>",
+                        price: "R$ 79,90",
+                        delivery: "⚡ Tempo Médio de Entrega:</br> 5 min"
                     }
+
                 };
 
                 // Obtém os detalhes do produto com base no id 

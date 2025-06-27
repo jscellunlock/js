@@ -14,7 +14,7 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Reset de estilos cross‑browser -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
@@ -256,6 +256,8 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
                         <div class="dropdown ">
                             <button class="dropdown-btn  btn-link fonte-menu">Fazer pedido</button>
                             <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Serviço imei</a>
+                                <a class="dropdown-item" href="#">Serviço de servidor</a>
                                 <a class="dropdown-item" href="remoto.html">Serviço remoto</a>
                                 <a class="dropdown-item" href="cine.html">Serviço cine tela </a>
 
@@ -293,8 +295,18 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
                         </a>
                     </li>
 
+                     <li class="nav-item">
+                        <a class="nav-link fonte-menu" href="#" class="btn btn-primary"
+                            style="color: rgb(250, 250, 250);">SERVIÇO IMEI
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a href="produto remoto.html" class="nav-link fonte-menu d-flex align-items-center"
+                        <a class="nav-link fonte-menu" href="#" style="color: rgb(255, 255, 255);">SERVIÇO DE
+                            SERVIDOR</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="remoto.html" class="nav-link fonte-menu d-flex align-items-center"
                             data-id="527568">
                             SERVIÇO REMOTO
                         </a>
