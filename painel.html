@@ -220,7 +220,7 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
 
     <script>
         // Código JavaScript para garantir que a navegação funcione
-        document.addEventListener('DOMContentLoaded', function () {
+          document.addEventListener('DOMContentLoaded', function () {
             const usuarioLogado = localStorage.getItem('usuarioLogado');
             if (!usuarioLogado) {
                 window.location.href = 'login.html';
@@ -316,9 +316,12 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
                             SERVIÇO CINE TELA
                         </a>
                     </li>
-
+                    <!-- Botão de Sair posicionado à direita com espaçamento -->
+           
+                   <button id="logout" style="color: rgb(0, 0, 0);">Sair</button>
                 </ul>
             </div>
+            
         </div>
         <div class="sidebar-section sidebar-cart">
         </div>
