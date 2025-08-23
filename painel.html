@@ -14,7 +14,7 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- Reset de estilos cross‑browser -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
@@ -220,7 +220,7 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
 
     <script>
         // Código JavaScript para garantir que a navegação funcione
-          document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function () {
             const usuarioLogado = localStorage.getItem('usuarioLogado');
             if (!usuarioLogado) {
                 window.location.href = 'login.html';
@@ -295,7 +295,7 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
                         </a>
                     </li>
 
-                     <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link fonte-menu" href="#" class="btn btn-primary"
                             style="color: rgb(250, 250, 250);">SERVIÇO IMEI
                         </a>
@@ -306,8 +306,7 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
                     </li>
 
                     <li class="nav-item">
-                        <a href="remoto.html" class="nav-link fonte-menu d-flex align-items-center"
-                            data-id="527568">
+                        <a href="remoto.html" class="nav-link fonte-menu d-flex align-items-center" data-id="527568">
                             SERVIÇO REMOTO
                         </a>
                     </li>
@@ -317,11 +316,11 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
                         </a>
                     </li>
                     <!-- Botão de Sair posicionado à direita com espaçamento -->
-           
-                   <button id="logout" style="color: rgb(0, 0, 0);">Sair</button>
+
+                    <button id="logout" style="color: rgb(0, 0, 0);">Sair</button>
                 </ul>
             </div>
-            
+
         </div>
         <div class="sidebar-section sidebar-cart">
         </div>
@@ -509,6 +508,66 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
                             </div>
                         </div>
 
+                        <!-- Área de Status dos Pedidos -->
+                        <div class="clientarea-balance">
+                            <div class="row text-center">
+                                <!-- Pedidos com Sucesso -->
+                                <div class="col-md-4 mb-3">
+                                    <div class="card card-area-status card-order-success h-100">
+                                        <div class="card-body">
+                                            <div onclick="window.location.href='produto remoto.html'"
+                                                style="cursor:pointer;">
+                                                <h2>
+                                                    <img src="imagem/a165m.jpeg " alt="Foto de desbloqueio"
+                                                        style="width:300px; height:280px;">
+                                                </h2>
+                                                <div class="text-muted1 mb-2"> seu aparelho esta bloqueado na payjoy
+                                                    faça
+                                                    pedido</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Foto de desbloqueio -->
+                                <div class="col-md-4 mb-3">
+                                    <div class="card card-area-status card-order-process h-100">
+                                        <div class="card-body">
+                                            <div onclick="window.location.href='produto remoto.html'"
+                                                style="cursor:pointer;">
+                                                <h2>
+                                                    <img src="imagem/c51.jpeg" alt="Foto de desbloqueio"
+                                                        style="width:300px; height:280px;">
+                                                </h2>
+                                            </div>
+
+                                            <div class="text-muted1 mb-2">seu xiaomi esta bloqueado nessa tela faça
+                                                pedido</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Foto de desbloqueio -->
+                                <div class="col-md-4 mb-3">
+                                    <div class="card card-area-status card-order-fail h-100">
+                                        <div class="card-body">
+                                            <div onclick="window.location.href='produto remoto.html'"
+                                                style="cursor:pointer;">
+                                                <h2>
+                                                    <img src="imagem/s23.jpeg" alt="Foto de desbloqueio"
+                                                        style="width:300px; height:280px;">
+                                                </h2>
+                                            </div>
+
+                                            <div class="text-muted1 mb-3">seu iphone ta bloqueado faça pedido</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
 
                         <!-- Outros componentes podem ser adicionados aqui -->
                     </div>
