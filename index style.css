@@ -240,7 +240,7 @@ header.header-156848294 .search-wrap .input-group button {
 
 footer,
 .direitos {
-  background-color: #27344d;
+  background-color: #0a152b;
 }
 
 footer,
@@ -956,10 +956,6 @@ body {
   display: block;
 }
 
-
-
-
-
 .dropdown {
   position: absolute;
 
@@ -1001,8 +997,6 @@ body {
     margin-left: 10px;
   }
 }
-
-
 
 /* Estilo para a área de aviso do marquee */
 .marquee {
