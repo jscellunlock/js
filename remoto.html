@@ -1180,28 +1180,7 @@
     </div><!-- container-fluid -->
 
     <script>
-        $(document).ready(function () {
-            $("#searchservicebox2").on("keyup", function () {
-                var value = $(this).val().toLowerCase();
-
-                // Filtra os produtos individuais
-                $(".service").each(function () {
-                    var productName = $(this).find(".searchme").text().toLowerCase();
-                    $(this).toggle(productName.indexOf(value) !== -1);
-                });
-
-                // Para cada grupo de produtos, verifica se há algum produto visível
-                $(".row.group").each(function () {
-                    if ($(this).find(".service:visible").length === 0) {
-                        // Se nenhum produto deste grupo estiver visível, oculta o título
-                        $(this).find(".title").hide();
-                    } else {
-                        // Caso contrário, exibe o título
-                        $(this).find(".title").show();
-                    }
-                });
-            });
-        });
+       
     </script>
     <div class="creditos">Powered by jscell unlock</div>
     <!-- Bootstrap JS e dependências -->
