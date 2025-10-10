@@ -1,0 +1,16 @@
+# robots.txt para https://jscellunlock.com.br/
+# Última atualização: 2025-10-10
+# Este arquivo orienta os robôs de busca a indexarem corretamente o site
+
+User-agent: *
+Allow: /
+
+# Bloqueia pastas internas ou de administração (caso existam)
+Disallow: /admin/
+Disallow: /painel/
+Disallow: /temp/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Caminho para o sitemap principal
+Sitemap: https://jscellunlock.com.br/sitemap.xml

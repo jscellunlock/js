@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- Página inicial -->
+  <url>
+    <loc>https://jscellunlock.com.br/</loc>
+    <lastmod>2025-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://jscellunlock.com.br/imagem/g15.jpeg</image:loc>
+      <image:title>Página inicial - JS Cell Unlock</image:title>
+    </image:image>
+  </url>
+
+  <!-- Painel -->
+  <url>
+    <loc>https://jscellunlock.com.br/painel.html</loc>
+    <lastmod>2025-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jscellunlock.com.br/imagem/mdm.jpeg</image:loc>
+      <image:title>Painel de Desbloqueios Remotos</image:title>
+    </image:image>
+  </url>
+
+  <!-- Serve -->
+  <url>
+    <loc>https://jscellunlock.com.br/serve.html</loc>
+    <lastmod>2025-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Remoto -->
+  <url>
+    <loc>https://jscellunlock.com.br/remoto.html</loc>
+    <lastmod>2025-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://jscellunlock.com.br/imagem/pa.jpeg</image:loc>
+      <image:title>Desbloqueio remoto MDM</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://jscellunlock.com.br/imagem/g15.jpeg</video:thumbnail_loc>
+      <video:title>Desbloqueio Moto G15</video:title>
+      <video:description>Desbloqueio remoto Moto G15 repair 2 IMEI</video:description>
+      <video:content_loc>https://jscellunlock.com.br/imagem/Video%20g15.mp4</video:content_loc>
+      <video:player_loc>https://jscellunlock.com.br/imagem/Video%20g15.mp4</video:player_loc>
+    </video:video>
+  </url>
+
+  <!-- Cine -->
+  <url>
+    <loc>https://jscellunlock.com.br/cine.html</loc>
+    <lastmod>2025-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Rem -->
+  <url>
+    <loc>https://jscellunlock.com.br/rem.html</loc>
+    <lastmod>2025-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
