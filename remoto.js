@@ -47,7 +47,7 @@ function popupOrder(id, serviceName) {
         "id_405e28906322882c5be9b4b27f4c35f": {
             image: "imagem/js.jpg",
             description: "Descrição desbloqueio remoto todos modelos xiaomi conta google { online } ✅.",
-            price: "R$ 60,00",
+            price: "R$ 50,00",
             delivery: "Minutos Prazo de entrega "
         },
 
@@ -166,7 +166,7 @@ function popupOrder(id, serviceName) {
         "11f524c3fbfeeca4aa916edcb6b6392": {
             image: "imagem/PayJoy lock.png",
             description: "Descrição desbloqueio payjoy xiaomi definitivo ✅",
-            price: "R$100,00",
+            price: "R$ 80,00",
             delivery: "1-60 Minutos Prazo de entrega"
         },
 
@@ -323,34 +323,35 @@ $(document).ready(function () {
         });
     });
 });
-<!-- JavaScript da Busca -->
-  document.addEventListener("DOMContentLoaded", function () {
-            const searchInput = document.getElementById('searchInput');
-            const productCards = document.querySelectorAll('.product-list-item');
 
-            searchInput.addEventListener('keyup', function () {
-                const filter = searchInput.value.toLowerCase();
-                productCards.forEach(card => {
-                    // Verifica se o conteúdo do produto contém o termo digitado
-                    if (card.innerText.toLowerCase().includes(filter)) {
-                        card.style.display = "";
-                    } else {
-                        card.style.display = "none";
-                    }
-                });
-            });
-        });
+////// JavaScript da Busca ////////
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById('searchInput');
+    const productCards = document.querySelectorAll('.product-list-item');
 
-         // Verifica se algum elemento ultrapassa a largura do documento (debug)
-        const docWidth = document.documentElement.offsetWidth;
-        document.querySelectorAll('*').forEach(el => {
-            if (el.offsetWidth > docWidth) {
-                console.log(el);
+    searchInput.addEventListener('keyup', function () {
+        const filter = searchInput.value.toLowerCase();
+        productCards.forEach(card => {
+            // Verifica se o conteúdo do produto contém o termo digitado
+            if (card.innerText.toLowerCase().includes(filter)) {
+                card.style.display = "";
+            } else {
+                card.style.display = "none";
             }
         });
+    });
+});
 
-        // Alterna a exibição do chat ao clicar no botão
-        const whatsappChat = document.querySelector("#whatsapp-chat");
-        document.querySelector(".blantershow-chat").addEventListener("click", () => {
-            whatsappChat.classList.toggle("show");
-        });
+// Verifica se algum elemento ultrapassa a largura do documento (debug)
+const docWidth = document.documentElement.offsetWidth;
+document.querySelectorAll('*').forEach(el => {
+    if (el.offsetWidth > docWidth) {
+        console.log(el);
+    }
+});
+
+// Alterna a exibição do chat ao clicar no botão
+const whatsappChat = document.querySelector("#whatsapp-chat");
+document.querySelector(".blantershow-chat").addEventListener("click", () => {
+    whatsappChat.classList.toggle("show");
+});
