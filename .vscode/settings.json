@@ -1,5 +1,6 @@
 {
     "glassit.force_sway": true,
-    "glassit.alpha": 100
+    "glassit.alpha": 100,
+    "editor.formatOnSave": true
     
 }

@@ -301,8 +301,6 @@ function registrarPedido(cliente, whatsapp, produtoId, produtoNome, preco) {
     alert("Pedido registrado com sucesso! Aguarde nosso contato.");
 }
 
-
-
 $(document).ready(function () {
     $("#searchservicebox2").on("keyup", function () {
         var value = $(this).val().toLowerCase();
@@ -325,3 +323,22 @@ $(document).ready(function () {
         });
     });
 });
+<!-- JavaScript da Busca -->
+  document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById('searchInput');
+            const productCards = document.querySelectorAll('.product-list-item');
+
+            searchInput.addEventListener('keyup', function () {
+                const filter = searchInput.value.toLowerCase();
+                productCards.forEach(card => {
+                    // Verifica se o conteúdo do produto contém o termo digitado
+                    if (card.innerText.toLowerCase().includes(filter)) {
+                        card.style.display = "";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            });
+        });
+
+        

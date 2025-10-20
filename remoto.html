@@ -1236,22 +1236,7 @@
 
     <!-- JavaScript da Busca -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const searchInput = document.getElementById('searchInput');
-            const productCards = document.querySelectorAll('.product-list-item');
-
-            searchInput.addEventListener('keyup', function () {
-                const filter = searchInput.value.toLowerCase();
-                productCards.forEach(card => {
-                    // Verifica se o conteúdo do produto contém o termo digitado
-                    if (card.innerText.toLowerCase().includes(filter)) {
-                        card.style.display = "";
-                    } else {
-                        card.style.display = "none";
-                    }
-                });
-            });
-        });
+      
     </script>
 
     <div id="whatsapp-chat" class="hide">
