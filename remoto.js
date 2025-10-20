@@ -341,4 +341,16 @@ $(document).ready(function () {
             });
         });
 
-        
+         // Verifica se algum elemento ultrapassa a largura do documento (debug)
+        const docWidth = document.documentElement.offsetWidth;
+        document.querySelectorAll('*').forEach(el => {
+            if (el.offsetWidth > docWidth) {
+                console.log(el);
+            }
+        });
+
+        // Alterna a exibição do chat ao clicar no botão
+        const whatsappChat = document.querySelector("#whatsapp-chat");
+        document.querySelector(".blantershow-chat").addEventListener("click", () => {
+            whatsappChat.classList.toggle("show");
+        });
