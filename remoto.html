@@ -309,6 +309,8 @@
             <!-- Nome -->
             <div class="logo-text">jscellunlock</div>
           </div>
+
+
           <!-- Itens à Direita -->
           <div class="right-items d-flex align-items-center">
             <div class="dropdown">
@@ -374,81 +376,51 @@
       });
     </script>
 
-    <div
-      class="d-block d-sm-none shortcuts-mobile-area py-1 border-bottom"
-    ></div>
     <div class="offcanvas-bg-overlay close-sidebar"></div>
-    <div
-      class="sidebar py-3 px-4 navbar-collapse offcanvas-collapse"
-      id="navbarsExampleDefault"
-    >
-      <div class="sidebar-section sidebar-category">
-        <div class="sidebar-header pb-3">
-          &nbsp;
-          <i class="fas fa-times close-button close-sidebar"></i>
+    <div class="sidebar py-3 px-4 navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <div class="sidebar-section sidebar-category">
+            <div class="sidebar-header pb-3">
+                &nbsp;
+                <i class="fas fa-times close-button close-sidebar"></i>
+            </div>
+
+            <div class="sidebar-content">
+
+                <ul class="navbar-nav ml-auto mt-2 nav-categories-level-1 border-top">
+                    <button class="dropdown-btn btn btn-primary fonte-menu"
+                        onclick="window.location.href='painel.html'">
+                        Painel
+                    </button>
+
+                    <li class="nav-item">
+                        <a class="nav-link fonte-menu" href="#" class="btn btn-primary"
+                            style="color: rgb(250, 250, 250);">SERVIÇO IMEI
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fonte-menu" href="serve.html" style="color: rgb(255, 255, 255);">SERVIÇO DE
+                            LICENÇA</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fonte-menu" href="remoto.html" style="color: rgb(255, 255, 255);">SERVIÇO
+                            REMOTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fonte-menu" href="cine.html" style="color: rgb(255, 255, 255);">Serviço CINE
+                            TELA
+                        </a>
+                    </li>
+
+                    <!-- Botão de Sair posicionado à direita com espaçamento -->
+
+                    <button id="logout" style="color: rgb(0, 0, 0);">Sair</button>
+                </ul>
+            </div>
+
         </div>
-
-        <div class="sidebar-content">
-          <ul class="navbar-nav ml-auto mt-2 nav-categories-level-1 border-top">
-            <button
-              class="dropdown-btn btn btn-primary fonte-menu"
-              onclick="window.location.href='painel.html'"
-            >
-              Painel
-            </button>
-
-            <li class="nav-item">
-              <a
-                class="nav-link fonte-menu btn btn-primary"
-                href="#"
-                style="color: rgb(250, 250, 250)"
-                >SERVIÇO IMEI</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link fonte-menu"
-                href="serve.html"
-                style="color: rgb(255, 255, 255)"
-                >SERVIÇO DE LICENÇA</a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link fonte-menu"
-                href="remoto.html"
-                style="color: rgb(255, 255, 255)"
-                >SERVIÇO REMOTO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link fonte-menu"
-                href="cine.html"
-                style="color: rgb(255, 255, 255)"
-                >Serviço CINE
-                <button id="logout-sidebar" style="color: rgb(0, 0, 0)">
-                  Sair
-                </button>
-              </a>
-            </li>
-
-            <!-- Botão de Sair posicionado à direita com espaçamento -->
-
-            <!-- Botão de Sair no sidebar — id único e handler inline para garantir funcionamento -->
-            <button
-              id="logout-sidebar-btn"
-              class="btn btn-link"
-              style="color: rgb(0, 0, 0)"
-              onclick="localStorage.removeItem('usuarioLogado'); window.location.replace('login.html');"
-            >
-              Sair
-            </button>
-          </ul>
+        <div class="sidebar-section sidebar-cart">
         </div>
-      </div>
-      <div class="sidebar-section sidebar-cart"></div>
     </div>
 
     <style>
