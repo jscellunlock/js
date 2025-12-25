@@ -166,8 +166,6 @@ function popupOrder(id, serviceName) {
         </div>`;
     }
 
-
-
     const modalContent = `
       <div class="row">
         <div class="col-md-6">
@@ -223,7 +221,6 @@ function popupOrder(id, serviceName) {
         window.open('https://wa.me/5581973202326?text=' + encodeURIComponent(text), '_blank');
     });
 }
-// --- IGNORE ---
 
 //-- JavaScript da Busca --//
 document.addEventListener("DOMContentLoaded", function () {
@@ -243,41 +240,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Verifica se o usuário está logado
-const usuarioLogado = localStorage.getItem("usuarioLogado");
-if (!usuarioLogado) {
-    window.location.href = "login.html";
-}
-
-// Ao clicar no botão "Sair", remove o login e redireciona para a página de login
-document.getElementById("logout").addEventListener("click", function () {
-    localStorage.removeItem("usuarioLogado");
-    // Redireciona sem deixar a página de logout no histórico
-    window.location.replace("login.html");
-});
-
-// Impede que o usuário retorne para a página protegida usando o botão "voltar"
-history.pushState(null, null, location.href);
-window.onpopstate = function () {
-    history.pushState(null, null, location.href); // Garante que o botão de "voltar" não traga o usuário de volta
-};
-
-// Certifique-se de que o histórico esteja "limpo" na página de login
-if (window.location.pathname === "/login.html") {
-    history.pushState(null, null, location.href); // Caso o usuário esteja na página de login, empurre uma nova entrada
-}
-
-// Código JavaScript para garantir que a navegação funcione
-document.addEventListener("DOMContentLoaded", function () {
-    const usuarioLogado = localStorage.getItem("usuarioLogado");
-    if (!usuarioLogado) {
-        window.location.href = "login.html";
-    }
-
-    document
-        .getElementById("logout")
-        .addEventListener("click", function () {
-            localStorage.removeItem("usuarioLogado");
-            window.location.replace("login.html");
-        });
-});
