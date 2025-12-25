@@ -449,22 +449,25 @@ header.minimal .logo a {
   }
 }
 
+/* ========================================================================
+   Offcanvas (Menu Lateral)
+======================================================================== */
 .offcanvas-collapse {
   position: fixed;
   top: 0;
   z-index: 10;
   bottom: 0;
-  width: 75%;
+  width: 68%;
   padding-right: 1rem;
   padding-left: 1rem;
   overflow-y: auto;
   visibility: hidden;
-  background-color: #000000;
-  box-shadow: 3px 0 25px #cacbce;
+  background-color: #00000091;
+  box-shadow: 3px 0 25px #ffffff;
   right: -100%;
   transition-property: right, visibility;
   transition-timing-function: ease-in-out;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .offcanvas-collapse.open {
@@ -484,9 +487,9 @@ header.minimal .logo a {
 }
 
 .offcanvas-collapse {
-  border-radius: 40px;
-  top: 10px;
-  bottom: 10px;
+  border-radius: 0px;
+  top: 0px;
+  bottom: 0px;
 }
 
 .offcanvas-collapse.open {
@@ -502,14 +505,15 @@ header.minimal .logo a {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 9;
-  opacity: .5;
+  z-index: 5;
+  opacity: 0.5;
   display: none;
   position: fixed;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(8.4px);
   -webkit-backdrop-filter: blur(8.4px);
 }
+
 
 @media (min-width: 990px) {
   .offcanvas-collapse {
@@ -613,13 +617,13 @@ header.minimal .logo a {
   position: static !important;
   transform: none !important;
 }
-
 .sidebar .dropdown-toggle::after {
   position: absolute;
   top: 20px;
   right: 0;
   font-size: 18px;
 }
+
 
 .sidebar-header {
   position: relative;
@@ -870,7 +874,7 @@ body {
 .nav-container {
   width: 100%;
   background: #000000;
-  padding: 10px;
+  padding: 08px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -904,12 +908,7 @@ body {
    Dropdown na Nav Container
 ======================================================================== */
 /* Efeito hover azul para todos os botões com a classe "dropdown-btn" */
-.dropdown-btn:hover {
-  background-color: #000000 !important;
-  /* azul */
-  color: #fff !important;
-  /* texto branco */
-}
+
 
 .dropdown {
   position: relative;
@@ -941,27 +940,52 @@ body {
 
 .dropdown-menu a {
   display: block;
-  padding: 06px 06px;
+  padding: 10px 10px;
   color: #000000;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .dropdown-menu a:hover {
-  background-color: #cfcccc;
+  background-color: #74c5fc;
 }
 
-/* Exibe o dropdown ao passar o mouse sobre o container */
+/* Mantém o dropdown aberto ao passar o mouse */
 .dropdown:hover .dropdown-menu {
   display: block;
+  margin-top: 0;
 }
 
 .dropdown {
   position: absolute;
-
-  right: 42px;
+  right: 0px;
   /* distância da direita */
 }
+
+/* ================================
+   BOTÃO GRUPO OFICIAL (FORÇADO)
+================================ */
+.ml-auto .btn.btn-custom {
+  background-color: #0e1ef1 !important;
+  color: #ffffff !important;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 6px 18px;
+  margin-left: 10px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+/* ÍCONE DO BOTÃO */
+.ml-auto .btn.btn-custom i {
+  color: #000000 !important;
+  font-size: 14px;
+}
+
+
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
@@ -978,7 +1002,7 @@ body {
 
   .btn-group {
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
     width: 100%;
   }
 
@@ -1332,3 +1356,4 @@ a.blantershow-chat svg {
     flex: 1 0 100%;
   }
 }
+

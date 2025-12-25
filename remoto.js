@@ -2,7 +2,7 @@ function popupOrder(id, serviceName) {
     var productDetails = {
         "4daa3db355ef2b0e64b472968cb70f0": {
             image: "imagem/12.jpeg",
-            description: "Descrição desbloqueio iphone { 5S/6S/6S+ } sem pegar chip ♨️.",
+            description: "Descrição desbloqueio iphone { 6S/6S+ } sem pegar chip ♨️.",
             price: "R$ 50,00",
             delivery: "1-30 Minutos",
 
@@ -19,7 +19,7 @@ function popupOrder(id, serviceName) {
         "af3303f852abeccd793068486a39162": {
             image: "imagem/12.jpeg",
             description: "Descrição desbloqueio iphone { 8/8+/X } sem pegar chip ♨️.",
-            price: "R$ 70,00",
+            price: "R$ 50,00",
             delivery: "1-30 Minutos"
         },
 
@@ -33,7 +33,7 @@ function popupOrder(id, serviceName) {
         "90794e3b050f815354e3e29e977a88a": {
             image: "imagem/open].png",
             description: "IPHONE XR/16 PRO MAX OPEN MENU FMI OFF ♨️.",
-            price: "R$150,00",
+            price: "R$ 150,00",
             delivery: "1-60 Minutos Prazo de entrega"
         },
 
@@ -74,8 +74,8 @@ function popupOrder(id, serviceName) {
 
         "id_c8c41c4a18675a74e01c8a20e8a0f66": {
             image: "imagem/js.jpg",
-            description: "Descrição desbloqueio samsung frp via imei/sn conta google android 14 { online } ✅.",
-            price: "R$ 140,00",
+            description: "Descrição desbloqueio Huawei frp conta google { online } ✅.",
+            price: "R$ 50,00",
             delivery: "20 Miniutes Prazo de entrega "
         },
 
@@ -145,7 +145,7 @@ function popupOrder(id, serviceName) {
         "id_1c1d4df596d01da60385f0bb17a4a": {
             image: "imagem/hq720.jpg",
             description: "Descrição remoto desbloqueio xiaomi mi cloud semi definitivo { online } ✅.",
-            price: "R$ 80,00",
+            price: "R$ 70,00",
             delivery: "Minutos Prazo de entrega"
         },
 
@@ -159,27 +159,27 @@ function popupOrder(id, serviceName) {
         "798cebccb32617ad94123450fd13710": {
             image: "imagem/PayJoy lock.png",
             description: "Descrição desbloqueio payjoy motorola SPD-MTK definitivo ✅.",
-            price: "R$100,00",
+            price: "R$ 70,00",
             delivery: "1-60 Minutos Prazo de entrega"
         },
 
         "168908dd3227b8358eababa07fcaf09": {
             image: "imagem/PayJoy lock.png",
             description: "Descrição desbloqueio payjoy samsung bypass ✅",
-            price: "R$150,00",
+            price: "R$ 150,00",
             delivery: "1-60 Minutos Prazo de entrega"
         },
 
         "11f524c3fbfeeca4aa916edcb6b6392": {
             image: "imagem/PayJoy lock.png",
             description: "Descrição desbloqueio payjoy xiaomi definitivo ✅",
-            price: "R$ 80,00",
+            price: "R$ 60,00",
             delivery: "1-60 Minutos Prazo de entrega"
         },
 
         "d4b2aeb2453bdadaa45cbe9882ffefc": {
             image: "imagem/js2.jpeg",
-            description: "Descrição desbloqueio iphone { 5S/6S/6S+ } passcod | indisponivel bloqueio de seguraça | inativo ✅",
+            description: "Descrição desbloqueio iphone { 6S/6S+ } passcod | indisponivel bloqueio de seguraça | inativo ✅",
             price: "R$ 50,00",
             delivery: "1-60 Minutos Prazo de entrega"
         },
@@ -194,7 +194,7 @@ function popupOrder(id, serviceName) {
         "043c3d7e489c69b48737cc0c92d0f3a": {
             image: "imagem/js2.jpeg",
             description: "Descrição desbloqueio iphone { 8/8+/ X } passcod | indisponivel bloqueio de seguraça | inativo  ✅",
-            price: "R$ 80,00",
+            price: "R$ 70,00",
             delivery: "1-60 Minutos Prazo de entrega"
         }
     };
@@ -218,16 +218,14 @@ function popupOrder(id, serviceName) {
                     <label for="anydesk-input">Seu ID AnyDesk:</label>
                     <input type="text" id="anydesk-input" class="form-control" placeholder="Ex: 123 456 789" />
                 </div>`;
+
     } else if (id === "id_c8c41c4a18675a74e01c8a20e8a0f66") {
         extraFields = `
-                <div class="form-group mt-3">
-                    <label for="imei-input">IMEI do Aparelho:</label>
-                    <input type="text" id="imei-input" class="form-control" placeholder="Ex: 356938035643809" />
-                </div>
-                <div class="form-group">
-                    <label for="sn-input">Número de Série (SN):</label>
-                    <input type="text" id="sn-input" class="form-control" placeholder="Ex: R58M11ABCD" />
-                </div>`;
+                
+               <div class="form-group">
+                    <label for="anydesk-input">seu ID AnyDesk:</label>
+                    <input type="text" id="anydesk-input" class="form-control" placeholder="Ex: 123 456 789" />
+                </div>`; 
     }
 
     var modalContent = `
@@ -348,4 +346,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
