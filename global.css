@@ -760,7 +760,7 @@ body,
   font-size: 24pt;
 }
 
-.rounded-20.text-center.highlighted.h-100 h2:first-of-type {
+.rounded-20.text-center.highlighted.h-100 h2:first-of-type a {
   color: transparent;
   background: linear-gradient(90deg, #000000, #007bff);
   -webkit-background-clip: text;
@@ -782,7 +782,7 @@ body,
   font-weight: bolder;
 }
 
-.rounded-20.text-center.highlighted.h-100 h2:nth-of-type(2) {
+.rounded-20.text-center.highlighted.h-100 h2:nth-of-type(2) a{
   color: transparent;
   background: linear-gradient(90deg, #f8992c, #f8992c91, #027cff);
   -webkit-background-clip: text;
